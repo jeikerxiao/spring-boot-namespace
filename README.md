@@ -179,11 +179,12 @@ public class SimpleDateFormatBeanDefinitionParser extends AbstractSingleBeanDefi
 
 在resources中创建
 
-META-INF/spring.handlers
+META-INF/spring.schemas
 
 ```
-http\://www.mycompany.com/schema/myns=com.jeiker.namespace.MyNamespaceHandler
+http\://www.mycompany.com/schema/myns/myns.xsd=xml/myns.xsd
 ```
+
 ### 4.2 注册handler
 
 在resources中创建
@@ -191,7 +192,7 @@ http\://www.mycompany.com/schema/myns=com.jeiker.namespace.MyNamespaceHandler
 META-INF/spring.handlers
 
 ```
-http\://www.mycompany.com/schema/myns/myns.xsd=xml/myns.xsd
+http\://www.mycompany.com/schema/myns=com.jeiker.namespace.MyNamespaceHandler
 ```
 
 ### 5. 测试
